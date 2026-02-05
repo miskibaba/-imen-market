@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="style/sitil1.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="logo-area">
+        <img src="images/logo1.jpeg" alt="Logo">
+        <span class="market-name">URGANLI ÇİMEN MARKET</span>
+    </div>
+
+    <!-- ORTAK ARAMA -->
+    <form class="search"
+          action="https://www.google.com/search"
+          method="get"
+          target="_blank"
+          autocomplete="off">
+
+        <input type="hidden" name="tbm" value="shop">
+
+        <div class="search-box">
+            <input
+                id="searchInput"
+                type="text"
+                name="q"
+                placeholder="Ürün ara..."
+                autocomplete="off">
+
+            <button type="submit">Ara</button>
+            <ul id="autocompleteList"></ul>
+        </div>
+    </form>
+
+    <nav class="menu">
+        <a href="index.html">Anasayfa</a>
+        <a href="toptan.html">Toptan</a>
+        <a href="perakende.html">Perakende</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+</header>
+
+
+
+<main class="content">
+    <div class="contact-card">
+        <a class="contact-item whatsapp-link" href="https://wa.me/905060441345">
+            <img src="images/whatsap.jpg" class="contact-icon">
+            <div><strong>WhatsApp</strong><br>0506 044 13 45</div>
+        </a>
+
+        <a class="contact-item instagram-link" href="https://www.instagram.com/cimen13">
+            <img src="images/ig.jpg" class="contact-icon">
+            <div><strong>Instagram</strong><br>@cimen13</div>
+        </a>
+
+        <a class="contact-item tiktok-link" href="https://www.tiktok.com/@cimen13">
+            <img src="images/tiktok.png" class="contact-icon">
+            <div><strong>TikTok</strong><br>@cimen13</div>
+        </a>
+    </div>
+</main>
+
+<footer class="footer">© 2026 Çimen Market</footer>
+<script src="script.js"></script>
+
+</body>
+</html>

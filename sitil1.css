@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+}
+
+/* ===== ÜST BAR ===== */
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 25px;
+    background: #2e7d32;
+    color: white;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-area img {
+    height: 42px;
+}
+
+.market-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* MENÜ SAĞDA */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* ===== ORTA ALAN ===== */
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 40px 15px;
+}
+
+/* ===== ANA FOTO ===== */
+.image-box {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+}
+
+.image-box img {
+    width: 100%;
+    display: block;
+    border-radius: 16px;
+}
+
+.image-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px black;
+}
+
+/* FOTO ÜSTÜ BUTONLAR */
+.hero-buttons {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+/* ===== BUTONLAR ===== */
+.btn {
+    padding: 16px 45px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+}
+
+.btn-toptan {
+    background: linear-gradient(135deg, #1b5e20, #43a047);
+}
+
+.btn-perakende {
+    background: linear-gradient(135deg, #263238, #546e7a);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #eee;
+    margin-top: 40px;
+}
+
+/* ===== SABİT WHATSAPP ===== */
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #25d366;
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+/* ===== İLETİŞİM HAVALI KART ===== */
+.contact-card {
+    max-width: 600px;
+    background: linear-gradient(135deg, #ffffff, #f1f1f1);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+    margin-bottom: 18px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    transition: 0.35s;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.whatsapp-link { background: #e7f8ee; }
+.instagram-link { background: #fce8f1; }
+.tiktok-link { background: #e8f1fc; }
+
+.contact-icon {
+    width: 44px;
+    height: 44px;
+}
+/* ===== ARAMA + TAMAMLAMA ===== */
+.search-box {
+    position: relative;
+}
+
+.search {
+    margin: 0 20px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    min-width: 230px;
+}
+
+.search button {
+    border: none;
+    background: linear-gradient(135deg, #1b5e20, #43a047);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+/* TAMAMLAMA LİSTESİ */
+#suggestions {
+    position: absolute;
+    top: 44px;
+    left: 0;
+    right: 0;
+    background: white;
+    list-style: none;
+    margin: 0;
+    padding: 6px 0;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    display: none;
+    z-index: 50;
+}
+
+#suggestions li {
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#suggestions li:hover {
+    background: #f1f1f1;
+}
+/* ARAMA KUTUSU */
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding: 10px 14px;
+    width: 240px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-box button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 6px;
+    background: #2e7d32;
+    color: white;
+    cursor: pointer;
+}
+
+/* GOOGLE TARZI AÇILAN LİSTE */
+#autocompleteList {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    z-index: 999;
+}
+
+#autocompleteList li {
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#autocompleteList li:hover {
+    background: #f1f1f1;
+}
+/* AUTOCOMPLETE NET GÖRÜNÜM */
+#autocompleteList {
+    background: #ffffff;
+}
+
+#autocompleteList li {
+    color: #000000;      /* SİYAH YAZI */
+    font-weight: 500;
+}
+
+#autocompleteList li:hover {
+    background: #e8f5e9; /* AÇIK YEŞİL */
+}
